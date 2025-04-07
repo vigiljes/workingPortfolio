@@ -16,41 +16,40 @@ export const EXPERIENCES = [
     technologies: ["Word/Docs", "Excel/Sheets", "Spotify"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
     year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    role: "Front-End Developer",
+    company: "Independent",
+    description: `**Developed and maintained web applications using Figma, Python, Javascript and basic HTML/CSS. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+    technologies: ["Python", "Figma", "Javascript", "HTML/CSS"],
+  },
+  {
+    year: "2019 - 2020",
+    role: "Receiving Team Lead",
+    company: "Christensen's Plant Center",
+    description: `Demonstrated proficiency in operating its advanced hydraulic systems and zero-turn maneuverability, optimizing overall team performance in confined workspaces.`,
+    technologies: ["ADP", "Transceiver", "Excel/Sheets", "mySQL"],
+  },
+  {
+    year: "2016 - 2018",
+    role: "Free-Lance Audio/Video Editing/Graphic Design",
+    company: "Independent",
+    description: `Developed expertise in graphic design and visual engagement through dedicated practice and study, including the creation of independent projects to refine and enhance skills over time.`,
+    technologies: ["Sony Vegas", "Photoshop/GIMP", "Splice", "FL Studio"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Record Collector's Bingo App",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Designed a working prototype for a competitive collect-a-thon for the record collecting community using Figma, Adobe Creative Cloud and Public Figma assets.",
+    technologies: ["Figma", "Adobe Illustrator", "Discogs", "React", "Paint"],
   },
   {
-    title: "Task Management App",
+    title: "Spotify Mood Creator",
     image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+    description: "An application designed for personalized music management and mood selection, featuring functionalities such as playlist creation, mood-based song suggestions, and real-time customization to enhance listening experiences.",    
     technologies: ["HTML", "CSS", "Angular", "Firebase"],
   },
   {
@@ -58,19 +57,19 @@ export const PROJECTS = [
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["Node.js", "React", "Tailwind CSS", "MotionDEV"],
   },
   {
-    title: "Blogging Platform",
+    title: "Personal Blogging Platform",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A personal blogging platform crafted to chronicle the fusion of user experience design and the vibrant world of hip-hop and music. The platform serves as a creative space to log insights, share stories, and explore the intersection of UX and musical artistry.",
+    technologies: ["HTML", "CSS", "Javascript", "Youtube", "Netlify"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "220 Trowbridge Rd",
+  phoneNo: "+1 678 999 8212",
+  email: "vigiljes@msu.edu",
 };
