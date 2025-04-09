@@ -17,16 +17,16 @@ export const EXPERIENCES = [
   },
   {
     year: "2020 - 2021",
-    role: "Front-End Developer",
+    role: "Front-End Web Developer",
     company: "Independent",
     description: `**Developed and maintained web applications using Figma, Python, Javascript and basic HTML/CSS. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Figma", "Javascript", "HTML/CSS"],
+    technologies: ["Python", "C++", "Javascript", "Supabase"],
   },
   {
     year: "2019 - 2020",
     role: "Receiving Team Lead",
     company: "Christensen's Plant Center",
-    description: `Demonstrated proficiency in operating its advanced hydraulic systems and zero-turn maneuverability, optimizing overall team performance in confined workspaces.`,
+    description: `Demonstrated proficiency in operating its advanced hydraulic systems and zero-turn machinery, optimizing overall team performance in confined workspaces.`,
     technologies: ["ADP", "Transceiver", "Excel/Sheets", "mySQL"],
   },
   {
@@ -49,8 +49,8 @@ export const PROJECTS = [
   {
     title: "Spotify Mood Creator",
     image: project2,
-    description: "An application designed for personalized music management and mood selection, featuring functionalities such as playlist creation, mood-based song suggestions, and real-time customization to enhance listening experiences.",    
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    description: "An application designed for personalized music management and mood selection, featuring functionalities such as playlist creation, mood-based song suggestions, and real-time customization to enhance listening experiences using Spotify's public web API.",    
+    technologies: ["HTML", "CSS", "Javascript", "React"],
   },
   {
     title: "Portfolio Website",
@@ -64,7 +64,7 @@ export const PROJECTS = [
     image: project4,
     description:
       "A personal blogging platform crafted to chronicle the fusion of user experience design and the vibrant world of hip-hop and music. The platform serves as a creative space to log insights, share stories, and explore the intersection of UX and musical artistry.",
-    technologies: ["HTML", "CSS", "Javascript", "Youtube", "Netlify"],
+    technologies: ["HTML", "CSS", "Javascript", "Youtube", "Ubuntu WSL"],
   },
 ];
 
