@@ -18,8 +18,8 @@ const Projects = () => {
                         initial={{opacity: 0, x:-100}}
                         transition= {{duration: 1}}
                         src={project.image} 
-                        width={150} 
-                        height={150} 
+                        width={222} 
+                        height={222} 
                         alt={project.title} 
                         className="mb-6 rounded"
                         />
