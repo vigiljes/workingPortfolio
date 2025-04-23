@@ -21,14 +21,14 @@ const Dropdown = () => {
       {/* Dropdown Button - Opens on Hover */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="px-6 py-2 bg-[#4a267d] text-white rounded-md font-bold text-lg"
+        className="px-6 py-2 bg-[#2e176c] text-white rounded-md font-bold text-lg"
       >
         ☰
       </button>
 
       {/* Dropdown Menu - Hover & Click Activation */}
       <div
-        className={`absolute left-1/2 transform -translate-x-1/2 top-full mt-2 w-40 sm:w-48 bg-[#2e176c] text-white rounded-md shadow-lg z-40 transition-all duration-300 ${
+        className={`absolute left-1/2 transform -translate-x-1/2 top-full mt-2 w-40 sm:w-48 bg-[#4a267d] text-white rounded-md shadow-lg z-40 transition-all duration-300 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         } group-hover:opacity-100 group-hover:visible`}
       >
