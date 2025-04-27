@@ -218,7 +218,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "220 Trowbridge Rd",
-  phoneNo: "+1 678 999 8212",
+  address: "®Copyright 2025",
+  phoneNo: "Jesus Vigil",
   email: "vigiljes@msu.edu",
 };
