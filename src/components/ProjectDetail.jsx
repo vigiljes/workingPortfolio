@@ -15,6 +15,7 @@ const ProjectDetail = () => {
 
   const jobDetails = jobDetailsMap[projectId] || [];
 
+  // Handle case where project doesn't exist
   if (!project) {
     return (
       <h2 className="text-center text-3xl mt-20">
@@ -25,16 +26,26 @@ const ProjectDetail = () => {
 
   return (
     <div className="container mx-auto px-4 max-w-2xl">
-      {/* Project Title */}
+      {/* Project Title with Dynamic External Link */}
       <motion.h1
-  initial={{ opacity: 0, y: -50 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
-  className="mt-6 mb-10 text-center text-3xl font-bold"
->
-  {project.title}
-</motion.h1>
-
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="mt-6 mb-10 text-center text-3xl font-bold"
+      >
+        {project.website ? (
+          <a
+            href={project.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-purple-500 transition"
+          >
+            {project.title} 🔗
+          </a>
+        ) : (
+          project.title
+        )}
+      </motion.h1>
 
       {/* Scaled Down Project Image */}
       <motion.img
@@ -46,7 +57,7 @@ const ProjectDetail = () => {
         className="mx-auto rounded-lg shadow-md w-3/4 max-w-sm"
       />
 
-      {/* Experience Sections - Fixed Paragraph Separation! */}
+      {/* Experience Sections - Every Paragraph Restored! */}
       <div className="mt-8 space-y-6">
         {jobDetails.map((job, index) => (
           <motion.div
@@ -60,51 +71,50 @@ const ProjectDetail = () => {
             <h2 className="text-xl font-semibold text-center">{job.title}</h2>
 
             <div className="space-y-6">
-              <div><p className="text-md text-neutral-400 leading-relaxed">{job.desc1}</p></div>
+              <p className="text-md text-neutral-400 leading-relaxed">{job.desc1}</p>
+
               {job.subtitle && (
                 <>
-                  <div><h3 className="text-lg font-semibold text-center mt-0 pt-6">{job.subtitle}</h3></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc2}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc99}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc98}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc97}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc96}</p></div>
+                  <h3 className="text-lg font-semibold text-center pt-6">{job.subtitle}</h3>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc2}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc99}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc98}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc97}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc96}</p>
                 </>
               )}
 
               {job.subtitle2 && (
                 <>
-                  <div><h3 className="text-lg font-semibold text-center mt-0 pt-6">{job.subtitle2}</h3></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc3}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc95}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc01}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc02}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc03}</p></div>
+                  <h3 className="text-lg font-semibold text-center pt-6">{job.subtitle2}</h3>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc3}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc95}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc01}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc02}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc03}</p>
                 </>
               )}
 
               {job.subtitle3 && (
                 <>
-                  <div><h3 className="text-lg font-semibold text-center mt-0 pt-6">{job.subtitle3}</h3></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc5}</p></div>
-                
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc04}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc05}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc06}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc07}</p></div>
-
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc08}</p></div>
+                  <h3 className="text-lg font-semibold text-center pt-6">{job.subtitle3}</h3>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc5}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc04}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc05}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc06}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc07}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc08}</p>
                 </>
               )}
 
               {job.subtitle4 && (
                 <>
-                  <div><h3 className="text-lg font-semibold text-center mt-0 pt-6">{job.subtitle4}</h3></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc6}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc09}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc10}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc11}</p></div>
-                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc12}</p></div>
+                  <h3 className="text-lg font-semibold text-center pt-6">{job.subtitle4}</h3>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc6}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc09}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc10}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc11}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed">{job.desc12}</p>
                 </>
               )}
             </div>

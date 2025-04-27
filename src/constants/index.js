@@ -191,6 +191,7 @@ export const PROJECTS = [
   },
   {
     id: "spotify-mood-creator",
+    website: "https://spotlifiedmood.netlify.app/",
     title: "Spotify Mood Creator",
     image: project2,
     description:
@@ -199,6 +200,7 @@ export const PROJECTS = [
   },
   {
     id: "portfolio-website",
+    website: "https://chuyvii.com",
     title: "Portfolio Website",
     image: project3,
     description: "A personal portfolio website showcasing projects, skills, and contact information.",
@@ -207,6 +209,7 @@ export const PROJECTS = [
   {
     id: "personal-blog",
     title: "Personal Blogging Platform",
+    website: "https://spiffy-phoenix-bb98f5.netlify.app/",
     image: project4,
     description:
       "A personal blogging platform crafted to chronicle the fusion of user experience design and the vibrant world of hip-hop and music. The platform serves as a creative space to log insights, share stories, and explore the intersection of UX and musical artistry.",
