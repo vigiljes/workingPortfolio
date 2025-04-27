@@ -11,10 +11,21 @@ const Contact = () => {
         viewport={{ once: true }}
         className="my-10 text-center text-4xl"
       >
-        Let's chop it up
+        Let's build something! Tap in!
       </motion.h2>
 
       <div className="text-center tracking-tighter">
+        <motion.a
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          href="#"
+          className="border-b my-4"
+        >
+          {CONTACT.email}
+        </motion.a>
+
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -34,17 +45,6 @@ const Contact = () => {
         >
           {CONTACT.phoneNo}
         </motion.p>
-
-        <motion.a
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, y: -100 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-          href="#"
-          className="border-b"
-        >
-          {CONTACT.email}
-        </motion.a>
       </div>
     </div>
   );
