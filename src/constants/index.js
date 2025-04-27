@@ -5,6 +5,16 @@ import project4 from "../assets/projects/project-4.jpg";
 import userFlowBingo from "../assets/projects/userFlowBingo.jpg";
 import recCollect from "../assets/projects/recCollect.jpg";
 import moodboard1 from "../assets/projects/moodboard1.png";
+import wireframe1 from "../assets/wireframes/wireframe1.png";
+import wireframe2 from "../assets/wireframes/wireframe2.png";
+import wireframe3 from "../assets/wireframes/wireframe3.png";
+import wireframe4 from "../assets/wireframes/wireframe4.png";
+import wireframe5 from "../assets/wireframes/wireframe5.png";
+import wireframe6 from "../assets/wireframes/wireframe6.png";
+import wireframe7 from "../assets/wireframes/wireframe7.png";
+import wireframe8 from "../assets/wireframes/wireframe8.png";
+import wireframe9 from "../assets/wireframes/wireframe9.png";
+
 import { time } from "framer-motion";
 
 
@@ -40,6 +50,69 @@ export const EXPERIENCES2 = [
   },
 
 ];
+
+export const JOBS1 = [
+  {
+    title: "Inspiration",
+    desc1: "Record collecting is more than a hobby—it’s a hunt, a culture, and a deeply personal experience. This project takes that passion and turns it into an interactive, gamified experience, inspired by vintage advertising aesthetics, bold typography from old comics, and the grainy, nostalgic feel of retro brands.",
+    subtitle: "Moodboard and The UX Approach",
+    desc2: "The visual identity draws heavily from old-school Americana, pulling references from Joe Camel ads, cigarette packaging, album sleeves, and vintage store signage. Colors lean towards muted, opaque tones to mimic aged prints, while textures add depth that complements the theme of digging through crates and finding hidden gems.",
+    desc3: "Collectors thrive on discoverability, rarity, and competition. The bingo-style game enhances this by creating a structured but unpredictable journey, letting users document their finds while chasing rare or themed sets. The UX is fluid, ensuring intuitive interactions that don’t disrupt the thrill of the search."
+  },
+
+];
+
+export const JOBS2 = [
+  {
+    title: "skeleton code",
+    desc1: "is really",
+    subtitle: "the key to",
+    desc2: "scalability my slime, ya smell me?",
+    desc3: "this should speed things up"
+  },
+
+];
+
+export const JOBS3 = [
+  {
+    title: "skeleton code",
+    desc1: "is really",
+    subtitle: "the key to",
+    desc2: "scalability my slime, ya smell me?",
+    desc3: "this should speed things up"
+  },
+
+];
+
+export const WIREFRAMES = [
+  {
+    image: wireframe1,
+  },
+  {
+    image: wireframe2,
+  },
+  {
+    image: wireframe3,
+  },
+  {
+    image: wireframe4,
+  },
+  {
+    image: wireframe5,
+  },
+  {
+    image: wireframe6,
+  },
+  {
+    image: wireframe7,
+  },
+  {
+    image: wireframe8,
+  },
+  {
+    image: wireframe9,
+  },
+]
 
 export const PROJECTS = [
   {

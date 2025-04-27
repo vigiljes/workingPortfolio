@@ -11,6 +11,9 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/Scribe";
 import BackToTop from "./components/ToTop";
+import JobDescriptions from "./components/descrip1"
+import JobDescriptions2 from "./components/descrip2"
+import WireframeGrid from "./components/wireframing";
 
 const App = () => {
   return (
@@ -28,7 +31,7 @@ const App = () => {
           <Route path="/" element={<><Hero /><Projects /><Technologies /><Contact /></>} />
           <Route path="/resume" element={<><Experience /><Contact /></>} />
           <Route path="/about" element={<><About /><Contact /></>} />
-          <Route path="/RecordBingo" element={<><About2 /><Experience2 /><ActualExper /><Contact /></>} />
+          <Route path="/RecordBingo" element={<><About2 /><Experience2 /><ActualExper /><JobDescriptions /><WireframeGrid /><JobDescriptions2 /><Contact /></>} />
         </Routes>
       </div>
     </div>
