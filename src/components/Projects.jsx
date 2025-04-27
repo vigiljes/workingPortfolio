@@ -9,7 +9,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true, amount: 0.2 }}
-      className="border-b border-neutral-900 pb-2"
+      className="border-b border-neutral-900 pb-10"
     >
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,11 +21,11 @@ const Projects = () => {
         Projects
       </motion.h2>
 
-      <div>
+      <div className="flex flex-col gap-10">
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            {/* Image Section - Route Adjusted */}
-            <motion.div className="w-full lg:w-1/4">
+          <div key={index} className="mb-8 flex flex-col lg:flex-row lg:items-start lg:justify-center gap-8">
+            {/* Image Section - Stays Separate & Resized Properly */}
+            <motion.div className="w-full flex justify-center lg:w-1/4">
               <Link to={project.id === "record-bingo" ? "/RecordBingo" : `/projects/${project.id}`}>
                 <motion.img
                   whileInView={{ opacity: 1, x: 0 }}
@@ -34,15 +34,15 @@ const Projects = () => {
                   viewport={{ once: true, amount: 0.2 }}
                   whileHover={{ scale: 1.1, boxShadow: "0px 10px 30px rgba(0,0,0,0.2)" }}
                   src={project.image}
-                  width={222}
-                  height={222}
+                  width={222}  // Keeps original size
+                  height={222} // Maintains aspect ratio
                   alt={project.title}
                   className="mb-6 rounded cursor-pointer"
                 />
               </Link>
             </motion.div>
 
-            {/* Description Section */}
+            {/* Description Section - Clickable Without Affecting Image Size */}
             <motion.div
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 100 }}
@@ -50,16 +50,24 @@ const Projects = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600"
-                >
-                  {tech}
-                </span>
-              ))}
+              <Link to={project.id === "record-bingo" ? "/RecordBingo" : `/projects/${project.id}`} className="block space-y-4">
+                <h6 className="font-semibold cursor-pointer hover:text-purple-500 transition">
+                  {project.title}
+                </h6>
+                <p className="text-neutral-400 cursor-pointer hover:text-purple-500 transition">
+                  {project.description}
+                </p>
+              </Link>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-600"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           </div>
         ))}

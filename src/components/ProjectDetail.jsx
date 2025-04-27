@@ -65,6 +65,10 @@ const ProjectDetail = () => {
                 <>
                   <div><h3 className="text-lg font-semibold text-center mt-0 pt-6">{job.subtitle}</h3></div>
                   <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc2}</p></div>
+                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc99}</p></div>
+                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc98}</p></div>
+                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc97}</p></div>
+                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc96}</p></div>
                 </>
               )}
 
@@ -72,7 +76,7 @@ const ProjectDetail = () => {
                 <>
                   <div><h3 className="text-lg font-semibold text-center mt-0 pt-6">{job.subtitle2}</h3></div>
                   <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc3}</p></div>
-
+                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc95}</p></div>
                   <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc01}</p></div>
                   <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc02}</p></div>
                   <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc03}</p></div>
@@ -100,6 +104,7 @@ const ProjectDetail = () => {
                   <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc09}</p></div>
                   <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc10}</p></div>
                   <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc11}</p></div>
+                  <div><p className="text-sm text-neutral-400 leading-relaxed">{job.desc12}</p></div>
                 </>
               )}
             </div>
