@@ -1,45 +1,75 @@
-import { EXPERIENCES } from "../constants"
-import { motion } from "framer-motion"
-import resumeSOhardTOfindWHYYY from "../assets/resumeSOhardTOfindWHYYY.pdf"
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import resumePDF from "../assets/resumeSOhardTOfindWHYYY.pdf";
+import resumeImage from "../assets/resumeSOhardTOfindWHYYY.jpg"; // Preview image
 
 const Experience = () => {
-  return <div className="border-b border-neutral-900 pb-4">
-    <motion.h2 
-    whileInView={{opacity:1, y: 0}}
-    initial={{opacity: 0, y:-102}}
-    transition={{duration: 0.5}}
-    className="my-20 text-center text-4xl"><a href={resumeSOhardTOfindWHYYY} target="_blank">🔗 Resume</a></motion.h2>
-    <div>
-        {EXPERIENCES.map((experience, index) => (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                <motion.div 
-                whileInView={{opacity: 1, x:0}}
-                initial={{opacity:0, x:-100}}
-                transition={{duration:1}}
-                className="w-full lg:w-1/4">
-                <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
-                </motion.div>
-                <motion.div 
-                whileInView={{opacity:1, x:0}}
-                initial={{opacity:0, x:100}}
-                transition={{duration:1}}
-                className="w-full max-w-xl lg:w-3/4">
-                <h6 className="mb-2 font-semibold">
-                    {experience.role} - {" "}
-                    <span className="text-sm text-purple-100">
-                        {experience.company}
-                    </span>
-                </h6>
-                <p className="mb-4 text-neutral-400">{experience.description}</p>
-                {experience.technologies.map((tech, index) => (
-                    <span key={index} className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm
-                    font-medium text-sky-600">{tech}</span>
-                ))}
-                </motion.div>
-            </div>
-        ))}
-    </div>
-    </div>
-}
+  const [isMobile, setIsMobile] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-export default Experience
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768); // Check if user is on mobile
+    window.addEventListener("resize", () => setIsMobile(window.innerWidth < 768));
+  }, []);
+
+  return (
+    <div className="border-b border-neutral-900 pb-4">
+      {/* Resume Header */}
+      <h2 className="my-20 text-center text-4xl">
+        <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+          🔗 Resume
+        </a>
+      </h2>
+
+      {/* Mobile: Image Above PDF Viewer */}
+      {isMobile && (
+        <div className="sm:hidden text-center mt-6">
+          <img
+            src={resumeImage}
+            alt="Resume Preview"
+            className="w-full max-w-[400px] mx-auto rounded-lg shadow-md cursor-pointer"
+            onClick={() => setIsModalOpen(true)}
+          />
+        </div>
+      )}
+
+{/* Desktop PDF Viewer - Completely Hidden on Mobile */}
+<div className="hidden sm:flex flex-wrap justify-center">
+  <div className="w-full max-w-[1000px] lg:w-[80%] h-[85vh] p-4">
+    <object 
+      data={resumePDF} 
+      type="application/pdf" 
+      className="w-full h-full rounded-lg shadow-lg"
+    >
+      <p className="text-center text-neutral-400">
+        PDF viewer is not supported.  
+        <a href={resumePDF} target="_blank" rel="noopener noreferrer" className="text-sky-500 underline">Open PDF here.</a>
+      </p>
+    </object>
+  </div>
+</div>
+
+      {/* Modal for Mobile */}
+      {isModalOpen && isMobile && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center"
+        >
+          <div className="relative bg-neutral-900 p-6 rounded-lg max-w-lg">
+            <img src={resumeImage} alt="Focused View" className="w-full h-auto rounded-lg" />
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-3 right-3 text-white text-lg font-bold cursor-pointer"
+            >
+              ✖
+            </button>
+          </div>
+        </motion.div>
+      )}
+    </div>
+  );
+};
+
+export default Experience;

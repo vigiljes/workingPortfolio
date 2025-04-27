@@ -40,7 +40,7 @@ const Dropdown = () => {
           </li>
           <li>
             <Link to="/resume" className="block px-4 py-2 hover:bg-[#530306]">
-              Experience
+              Resume
             </Link>
           </li>
           <li>

@@ -1,5 +1,7 @@
 import {PROJECTS} from "../constants"
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom";
+
 
 const Projects = () => {
   return (
@@ -12,18 +14,22 @@ const Projects = () => {
         <div>
             {PROJECTS.map((project, index) => (
                 <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                    <motion.div className="w-full lg:w-1/4">
-                        <motion.img 
-                        whileInView={{opacity:1, x:0}}
-                        initial={{opacity: 0, x:-100}}
-                        transition= {{duration: 1}}
-                        src={project.image} 
-                        width={222} 
-                        height={222} 
-                        alt={project.title} 
-                        className="mb-6 rounded"
-                        />
-                    </motion.div>
+<motion.div className="w-full lg:w-1/4">
+  <Link to={`/RecordBingo`}> 
+    <motion.img 
+      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, x: -100 }}
+      transition={{ duration: 1 }}
+      whileHover={{ scale: 1.1, boxShadow: "0px 10px 30px rgba(0,0,0,0.2)" }}
+      src={project.image} 
+      width={222} 
+      height={222} 
+      alt={project.title} 
+      className="mb-6 rounded cursor-pointer"
+    />
+  </Link>
+</motion.div>
+
                     <motion.div 
                     whileInView={{opacity:1, y:0}}
                     initial={{opacity: 0, y:100}}
