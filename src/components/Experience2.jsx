@@ -11,6 +11,7 @@ const Experience2 = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -102 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="my-12 text-center text-3xl"
         >
           The Process ⌛
@@ -19,7 +20,11 @@ const Experience2 = () => {
         {/* Header Labels - Fully Balanced */}
         <div className="mb-8 flex flex-row items-start text-left justify-center gap-x-4">
           {["Timeframe", "Role", "Description", "Technologies"].map((label, index) => (
-            <motion.div key={index} className="w-1/4 text-left flex justify-center">
+            <motion.div
+              key={index}
+              viewport={{ once: true }}
+              className="w-1/4 text-left flex justify-center"
+            >
               <p className="text-md font-medium text-neutral-400">{label}</p>
             </motion.div>
           ))}
@@ -33,6 +38,7 @@ const Experience2 = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
               className="w-full flex flex-row items-start justify-between gap-x-4"
             >
               {/* Timeframe Section - Centered */}
@@ -54,9 +60,13 @@ const Experience2 = () => {
               <div className="w-1/4 flex justify-center">
                 <div className="flex flex-wrap justify-center gap-2">
                   {experience.technologies.map((tech, index) => (
-                    <span key={index} className="rounded bg-neutral-900 px-3 py-2 text-md font-medium text-purple-800">
+                    <motion.span
+                      key={index}
+                      viewport={{ once: true }}
+                      className="rounded bg-neutral-900 px-3 py-2 text-md font-medium text-purple-800"
+                    >
                       {tech}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>

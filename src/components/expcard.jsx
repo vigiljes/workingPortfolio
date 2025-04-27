@@ -3,8 +3,9 @@ import { ABOUT2_TEXT } from "../constants";
 import { motion } from "framer-motion";
 
 const About2 = () => {
-  return( 
-<div className="container mx-auto px-4 max-w-screen-lg">      <h1 className="my-12 text-center text-4xl">
+  return (
+    <div className="container mx-auto px-4 max-w-screen-lg">
+      <h1 className="my-12 text-center text-4xl">
         Record Collector's <span className="text-neutral-500">BINGO</span>
       </h1>
 
@@ -16,15 +17,18 @@ const About2 = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="w-full max-w-[400px] lg:max-w-[500px]"
         >
-<img className="w-full max-w-[600px] mx-auto rounded-2xl" src={about2Img} />        </motion.div>
+          <img className="w-full max-w-[600px] mx-auto rounded-2xl" src={about2Img} />
+        </motion.div>
 
         {/* Text Section */}
         <motion.div 
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="w-full max-w-xl px-4"
         >
           <h2 className="mb-6 text-3xl font-bold">

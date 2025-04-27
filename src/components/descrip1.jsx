@@ -11,6 +11,7 @@ const JobDescriptions = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -102 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="my-12 text-center text-3xl sm:text-4xl font-semibold"
         >
           Background 📃
@@ -24,6 +25,7 @@ const JobDescriptions = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
               className="w-full flex flex-col items-start text-left gap-y-2"
             >
               {/* Job Title */}

@@ -13,6 +13,7 @@ const ActualExper = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
         className="my-20 text-center text-4xl"
       >
         In the beginning...
@@ -26,6 +27,7 @@ const ActualExper = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
             transition={{ duration: 1 }}
+            viewport={{ once: true }}
             className={`flex flex-col lg:flex-row items-center justify-between gap-x-16 ${
               index % 2 === 0 ? "lg:flex-row-reverse" : ""
             }`}
@@ -35,6 +37,7 @@ const ActualExper = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
               transition={{ duration: 1 }}
+              viewport={{ once: true }}
               whileHover={{ scale: 1.1, boxShadow: "0px 10px 30px rgba(0,0,0,0.2)" }}
               className="w-full lg:w-auto flex justify-center"
             >
@@ -53,6 +56,7 @@ const ActualExper = () => {
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 100 }}
               transition={{ duration: 1 }}
+              viewport={{ once: true }}
               className={`w-full max-w-xl lg:w-[55%] text-center lg:${
                 index % 2 === 0 ? "text-right" : "text-left"
               }`}

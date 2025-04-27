@@ -11,7 +11,8 @@ const WireframeGrid = () => {
             src={wf.image}
             alt={`Wireframe ${index + 1}`}
             initial={{ opacity: 0, scale: 0.5, y: 100, filter: "blur(6px)" }}
-            animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
+            whileInView={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut", delay: index * 0.15 }}
             className="w-28 sm:w-32 md:w-36 object-cover mx-auto"
           />
