@@ -55,7 +55,7 @@ export const JOBS1 = [
   {
     title: "Inspiration",
     desc1: "Record collecting is more than a hobby—it’s a hunt, a culture, and a deeply personal experience. This project takes that passion and turns it into an interactive, gamified experience, inspired by vintage advertising aesthetics, bold typography from old comics, and the grainy, nostalgic feel of retro brands.",
-    subtitle: "Moodboard and The UX Approach",
+    subtitle: "Moodboard, Wireframes, and The UX Approach",
     desc2: "The visual identity draws heavily from old-school Americana, pulling references from Joe Camel ads, cigarette packaging, album sleeves, and vintage store signage. Colors lean towards muted, opaque tones to mimic aged prints, while textures add depth that complements the theme of digging through crates and finding hidden gems.",
     desc3: "Collectors thrive on discoverability, rarity, and competition. The bingo-style game enhances this by creating a structured but unpredictable journey, letting users document their finds while chasing rare or themed sets. The UX is fluid, ensuring intuitive interactions that don’t disrupt the thrill of the search."
   },
@@ -64,11 +64,11 @@ export const JOBS1 = [
 
 export const JOBS2 = [
   {
-    title: "skeleton code",
-    desc1: "is really",
-    subtitle: "the key to",
-    desc2: "scalability my slime, ya smell me?",
-    desc3: "this should speed things up"
+    title: "Hi-Fi Frames",
+    desc1: "Collectors aren’t just buyers—they’re hunters, storytellers, and curators. This app builds on that by introducing gamified interaction, making every search feel like part of a greater quest. The randomized bingo boards keep the search spontaneous, while community-generated themes allow users to curate the experience based on their personal taste and style. Rather than simply being a digital checklist, the app is designed to reinforce the emotional thrill of finding something unexpected, much like stumbling across a rare vinyl in a dusty bin under a cluttered counter.",
+    subtitle: "UX Approach",
+    desc2: "This app isn’t just about collecting—it’s about the act of discovery itself. Inspired by the low-tech beauty of record stores, Polaroids, and imperfect analog media, the interface leans into nostalgia by using mixed typography, grainy textures, and lo-fi camera elements that feel personal rather than algorithmic.",
+    desc3: "Users don’t just log their finds—they capture moments, as if tacking Polaroids onto the walls of a shop that’s been around for decades. The goal was to mimic that sensory experience—the dim lighting, the quiet hum of a turntable, the faded album covers, and the thrill of flipping through endless stacks in search of the one record that makes everything worth it."
   },
 
 ];
