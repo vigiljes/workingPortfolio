@@ -24,9 +24,9 @@ const Projects = () => {
       <div>
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            {/* Image Section */}
+            {/* Image Section - Route Adjusted */}
             <motion.div className="w-full lg:w-1/4">
-              <Link to={`/RecordBingo`}>
+              <Link to={project.id === "record-bingo" ? "/RecordBingo" : `/projects/${project.id}`}>
                 <motion.img
                   whileInView={{ opacity: 1, x: 0 }}
                   initial={{ opacity: 0, x: -100 }}

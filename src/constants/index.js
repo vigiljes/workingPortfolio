@@ -15,7 +15,9 @@ import wireframe7 from "../assets/wireframes/wireframe7.png";
 import wireframe8 from "../assets/wireframes/wireframe8.png";
 import wireframe9 from "../assets/wireframes/wireframe9.png";
 
+
 import { time } from "framer-motion";
+import { desc } from "framer-motion/client";
 
 
 export const HERO_CONTENT = "What up doe! I'm an Experience Architect and Designer, passionate about blending creativity with functionality to solve problems people didn't even know existed. My work spans beyond the screen—it's about connecting the dots between design and engineering to create seamless, impactful experiences. I bring a hands-on approach to the table, using tools like Figma to wireframe intuitive layouts and conducting comprehensive user research to understand needs and behaviors. I'm also fascinated by full stack development, leveraging web frameworks like React, Node.js, TailwindCSS, and Next.js to craft online experiences from the ground up, combining technical innovation with creative storytelling.";
@@ -75,14 +77,57 @@ export const JOBS2 = [
 
 export const JOBS3 = [
   {
-    title: "skeleton code",
-    desc1: "is really",
-    subtitle: "the key to",
-    desc2: "scalability my slime, ya smell me?",
-    desc3: "this should speed things up"
+    title: "📌 Where It Started",
+    desc1: "A challenge was set—build something from scratch using an existing API. Given only three weeks, my friend and I took it upon ourselves to push the limits of Spotify's functionalities. The core idea? Mood-based recommendations, letting users explore new music without committing to rigid playlists.",
+    subtitle: "🤖 How AI Became Part of the Process",
+    subtitle2: "🎶 What the App Actually Does",
+    subtitle3: "🧐 Lessons Learned & What Could Have Been Improve",
+    subtitle4: "⚡ Three Weeks, Tight Execution, Big Takeaways",
+    desc2: "AI wasn’t just a tool—it was like having an extra brain in the room. We used it to interpret API structures, generate usable code, and troubleshoot inconsistencies when things weren’t lining up. It wasn’t perfect, but the process taught us just how effective AI can be in accelerating digital product creation when time is short.",
+    desc3: "Users log in and start exploring. The system analyzes mood-based factors like time, weather, genre, song key, and pitch, then suggests tracks that match the moment. It doesn’t interfere with Spotify’s native playlist system—it works alongside it, serving as a test space for discovery that could, over time, refine a person’s listening habits.",
+    desc5: "The app worked—but the mood detection? That’s where things could’ve been sharper. Given more time, deeper user research and AI assistance could’ve fine-tuned the recommendation engine, making it feel less like an algorithm and more like a true personal assistant for music discovery.",
+    desc6: "With little time, limited assets, and no graphic design expertise, we kept the visuals simple but made sure the concept shined. The project showed that when time is short, you have to focus on core interactions and embrace iteration. Even as a rough prototype, the potential was there—a functional case study proving that the intersection of AI, music, and UX design is something worth exploring further.",
   },
-
 ];
+
+export const JOBS4 = [
+  {
+    title: "1️⃣ The Process Over the Platform 🤖",
+    desc1: "This wasn’t just about putting projects on display—it was about proving adaptability. Jumping into new frameworks, experimenting with AI-assisted workflows, and building something from scratch meant understanding how different tools complement each other. From refining React components to navigating npm dependencies, this portfolio reflects how learning isn’t just theoretical—it’s hands-on, iterative, and integrated into real execution.",
+    subtitle: "2️⃣ UX Engineering: Marrying Functionality with Form 🎨🖥️",
+    subtitle2: "3️⃣ Designing for the User, Not Just the Code 🎯",
+    subtitle3: "4️⃣ Overcoming Challenges: Time, Optimization & Accessibility ⏳📱",
+    subtitle4: "5️⃣ Not a Collection, But a Foundation 🚀🔗",
+    desc2: "I wanted something that felt modern but wasn’t just design for design’s sake. The goal was fluidity, usability, and a structure that showcases how UX engineering ties together aesthetics with interactive logic. Minimal clutter, intentional interactions, and layouts that guide users through the experience—not just display information.",
+    desc3: "Every project builds on the last, but the biggest takeaway wasn’t technical—it was how people actually interact with digital experiences. Understanding user engagement goes beyond just code; it’s about designing interactions that feel natural, intuitive, and genuinely enjoyable.",
+    desc01: "Record Bingo reinforced the importance of gamification—how structured incentives keep users invested, making engagement feel intentional rather than forced. It showed how a well-designed flow can turn an app from a simple tool into an experience, something people actively want to use rather than something they tolerate.",
+    desc02: "As an app user myself, I took time to reflect on what makes interfaces feel seamless versus frustrating. How do I navigate digital spaces? What makes me stay on a page versus click away? Those insights shaped this portfolio, emphasizing clear hierarchy, minimal clutter, and transitions that enhance rather than disrupt navigation.",
+    desc03: "Ultimately, good UX isn’t just about functionality—it’s about behavior. This portfolio isn’t just a showcase; it’s a reflection of structured research combined with lived experience, balancing technical precision with the way people actually interact with technology.",
+    desc5: "Starting from scratch with only two weeks left in a three-week timeframe meant moving fast—no room for delays, no time for second-guessing. Every decision had to be purposeful, efficient, and flexible enough to work under real constraints",
+    desc04: "Optimization struggles hit early—balancing performance without overcomplicating dependencies meant refining components repeatedly, making sure everything ran smoothly without sacrificing complexity",
+    desc05: "Mobile responsiveness became a must, forcing adjustments to layout scaling, touch-friendly interactions, and ensuring the design wasn’t just functional on desktops but accessible across devices.",
+    desc06: "The time factor meant trade-offs—some polish had to wait, deeper iterations had to be saved for later, but the foundation of the portfolio remained solid, proving that adaptability and smart decision-making beat perfection when deadlines are tight.",
+    desc07: "",
+    desc08: "",
+    desc6: "This isn’t just a set of projects—it’s a launchpad for future web applications. Everything picked up—React fundamentals, animations, scalable routing, AI-assisted troubleshooting—gets applied here. This portfolio represents what comes next—not just what’s already been built.",
+  },
+];
+
+export const JOBS5 = [
+  {
+    title: "📌 Where It Started",
+    desc1: "",
+    subtitle: "🤖 How AI Became Part of the Process",
+    subtitle2: "🎶 What the App Actually Does",
+    subtitle3: "🧐 Lessons Learned & What Could Have Been Improved",
+    subtitle4: "⚡ Three Weeks, Tight Execution, Big Takeaways",
+    desc2: "",
+    desc3: "",
+    desc5: "",
+    desc6: "",
+  },
+];
+
 
 export const WIREFRAMES = [
   {
@@ -116,6 +161,7 @@ export const WIREFRAMES = [
 
 export const PROJECTS = [
   {
+    id: "record-bingo",
     title: "Record Collector's Bingo App",
     image: project1,
     description:
@@ -123,19 +169,22 @@ export const PROJECTS = [
     technologies: ["Figma", "Adobe Illustrator", "Discogs", "React", "Paint"],
   },
   {
+    id: "spotify-mood-creator",
     title: "Spotify Mood Creator",
     image: project2,
-    description: "An application designed for personalized music management and mood selection, featuring functionalities such as playlist creation, mood-based song suggestions, and real-time customization to enhance listening experiences using Spotify's public web API.",    
+    description:
+      "An application designed for personalized music management and mood selection, featuring functionalities such as playlist creation, mood-based song suggestions, and real-time customization to enhance listening experiences using Spotify's public web API.",
     technologies: ["HTML", "CSS", "Javascript", "React"],
   },
   {
+    id: "portfolio-website",
     title: "Portfolio Website",
     image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
+    description: "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["Node.js", "React", "Tailwind CSS", "MotionDEV"],
   },
   {
+    id: "personal-blog",
     title: "Personal Blogging Platform",
     image: project4,
     description:

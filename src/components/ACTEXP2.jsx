@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
 
 
-const ActualExper = () => {
+const ActualExper2 = () => {
   return (
     <div className="border-b border-neutral-900 pb-2">
         <motion.h2 
@@ -49,4 +49,4 @@ const ActualExper = () => {
   )
 }
 
-export default ActualExper
+export default ActualExper2
