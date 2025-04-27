@@ -11,7 +11,16 @@ const Contact = () => {
         viewport={{ once: true }}
         className="my-10 text-center text-4xl"
       >
-        Let's build something! Tap in!
+        Let's work! 🔨
+      </motion.h2>
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="my-10 text-center text-4xl"
+      >
+        Tap in! 📥
       </motion.h2>
 
       <div className="text-center tracking-tighter">
