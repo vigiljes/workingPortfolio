@@ -20,7 +20,15 @@ const About3 = () => {
           viewport={{ once: true }}
           className="w-full max-w-[400px] lg:max-w-[500px]"
         >
-          <img className="w-full max-w-[600px] mx-auto rounded-2xl" src={about2Img} />
+          <picture>
+            <source srcSet="../assets/protos.webp" type="image/webp" />
+            <img 
+              className="w-full max-w-[600px] mx-auto rounded-2xl" 
+              src={about2Img} 
+              alt="Record Collector's Bingo"
+              loading="lazy"
+            />
+          </picture>
         </motion.div>
 
         {/* Text Section */}

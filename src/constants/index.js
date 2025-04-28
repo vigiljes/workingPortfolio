@@ -81,7 +81,7 @@ export const JOBS3 = [
     desc1: "A challenge was set—build something from scratch using an existing API. Given only three weeks, my friend and I took it upon ourselves to push the limits of Spotify's functionalities. The core idea? Mood-based recommendations, letting users explore new music without committing to rigid playlists.",
     subtitle: "🤖 How AI Became Part of the Process",
     subtitle2: "🎶 What the App Actually Does",
-    subtitle3: "🧐 Lessons Learned & What Could Have Been Improve",
+    subtitle3: "🧐 Lessons Learned & What Could Have Been Improved",
     subtitle4: "⚡ Three Weeks, Tight Execution, Big Takeaways",
     desc2: "AI wasn’t just a tool—it was like having an extra brain in the room. We used it to interpret API structures, generate usable code, and troubleshoot inconsistencies when things weren’t lining up. It wasn’t perfect, but the process taught us just how effective AI can be in accelerating digital product creation when time is short.",
     desc3: "Users log in and start exploring. The system analyzes mood-based factors like time, weather, genre, song key, and pitch, then suggests tracks that match the moment. It doesn’t interfere with Spotify’s native playlist system—it works alongside it, serving as a test space for discovery that could, over time, refine a person’s listening habits.",

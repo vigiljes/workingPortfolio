@@ -6,17 +6,6 @@ const JobDescriptions2 = () => {
     <div className="border-b border-neutral-900 pb-10 flex justify-center">
       {/* Wrapper - Fully Centered Frame */}
       <div className="max-w-lg md:max-w-screen-md w-full mx-auto px-4 sm:px-6">
-        {/* Main Heading */}
-        <motion.h2
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -102 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="my-12 text-center text-3xl sm:text-4xl font-semibold"
-        >
-          Background 📃
-        </motion.h2>
-
         {/* Stacked & Left-Aligned Job Entries */}
         <div className="flex flex-col gap-y-4 sm:gap-y-6 md:gap-y-8">
           {JOBS2.map((job, index) => (
