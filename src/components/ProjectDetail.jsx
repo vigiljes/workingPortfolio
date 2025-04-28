@@ -68,7 +68,7 @@ const ProjectDetail = () => {
             className="border-b border-neutral-800 pb-4"
           >
             {/* Main Section */}
-            <h2 className="text-xl font-semibold text-center">{job.title}</h2>
+            <h2 className="text-xl font-semibold text-center pb-6">{job.title}</h2>
 
             <div className="space-y-6">
               <p className="text-md text-neutral-400 leading-relaxed w-full">{job.desc1}</p> {/* Wider paragraphs */}
