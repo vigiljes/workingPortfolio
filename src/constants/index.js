@@ -219,6 +219,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Jesus Vigil",
-  phoneNo: "®Copyright 2025",
+  phoneNo: "© Copyright 2025",
   email: "vigiljes@msu.edu",
 };
