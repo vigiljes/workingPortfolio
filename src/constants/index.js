@@ -161,18 +161,18 @@ export const JOBS5 = [
 
 export const JOBS6 = [
   {
-    title: "📌 Where It Started",
+    title: "Concept Statement 🗒️",
 
-    subtitle: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
-    desc1: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    subtitle: "Started off with some relevant research for museums and the kinds of exhibits they present to the public and out target audience: 5th grades on a class trip.",
+    desc1: "An elementary school teacher is in search of immersive experiences for her music students (class band). They are looking for something thats fun for both students and teachers/parents and reinforces multiple types of learning. (with tactile, visual and auditory feedback for user input).",
     desc2: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc99: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc98: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc97: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc96: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
-    images1: [wireframe10, wireframe11], // 👈 Images for this section
+    images1: [wireframe10, wireframe11, wireframe14, wireframe15], // 👈 Images for this section
 
-    subtitle2: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    subtitle2: "Some Visual Elements Studies/Methods 👁️📝",
     desc3: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc01: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc02: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
@@ -180,7 +180,7 @@ export const JOBS6 = [
     desc95: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     images2: [wireframe12, wireframe13, wireframe14, wireframe15], // 👈 More images here
 
-    subtitle3: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    subtitle3: "Sketching and Wireframing 🖌️",
     desc5: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc04: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc05: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
@@ -189,7 +189,7 @@ export const JOBS6 = [
     desc08: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     images3: [wireframe16, wireframe17], // 👈 Images for this section
 
-    subtitle4: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    subtitle4: "The Prototype! ⚙️",
     desc6: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc09: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc10: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
