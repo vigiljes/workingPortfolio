@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { PROJECTS, JOBS3, JOBS4, JOBS5 } from "../constants";
+import { PROJECTS, JOBS3, JOBS4, JOBS5, JOBS6 } from "../constants";
 import { motion } from "framer-motion";
 
 const ProjectDetail = () => {
@@ -8,6 +8,7 @@ const ProjectDetail = () => {
 
   // Map projects to their respective job details
   const jobDetailsMap = {
+    "interactive-learning": JOBS6,
     "spotify-mood-creator": JOBS3,
     "portfolio-website": JOBS4,
     "personal-blog": JOBS5,

@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.png"
 import userFlowBingo from "../assets/projects/userFlowBingo.jpg";
 import recCollect from "../assets/projects/recCollect.jpg";
 import moodboard1 from "../assets/projects/moodboard1.png";
@@ -149,6 +150,39 @@ export const JOBS5 = [
   },
 ];
 
+export const JOBS6 = [
+  {
+    title: "📌 Where It Started",
+    subtitle: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc1: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc2: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc99: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc98: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc97: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc96: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    subtitle2: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc3: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc01: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc02: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc03: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc95: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    subtitle3: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc5: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc04: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc05: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc06: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc07: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc08: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    subtitle4: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc6: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc09: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc10: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc11: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    desc12: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+  },
+];
+
+
 
 export const WIREFRAMES = [
   {
@@ -188,6 +222,14 @@ export const PROJECTS = [
     description:
       "Designed a working prototype for a competitive collect-a-thon for the record collecting community using Figma, Adobe Creative Cloud and Public Figma assets.",
     technologies: ["Figma", "Adobe Illustrator", "Discogs", "React", "Paint"],
+  },
+  {
+    id: "interactive-learning",
+    title: "Circle of Fifths - Interactive Learning",
+    image: project5,
+    description:
+      "Designed a prototype for an interactive learning museum exhibit using Figma, Adobe Creative Cloud and Public Figma assets.",
+    technologies: ["Figma", "Adobe Illustrator", "Unity"],
   },
   {
     id: "spotify-mood-creator",
