@@ -1,10 +1,11 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { PROJECTS, JOBS3, JOBS4, JOBS5, JOBS6, } from "../constants";
+import { PROJECTS, JOBS3, JOBS4, JOBS5, JOBS6 } from "../constants";
 import { motion } from "framer-motion";
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
-  const project = PROJECTS.find(p => p.id === projectId);
+  const project = PROJECTS.find((p) => p.id === projectId);
 
   // Map projects to their respective job details
   const jobDetailsMap = {
@@ -15,6 +16,7 @@ const ProjectDetail = () => {
   };
 
   const jobDetails = jobDetailsMap[projectId] || [];
+  const [selectedImage, setSelectedImage] = useState(null);
 
   // Handle case where project doesn't exist
   if (!project) {
@@ -26,7 +28,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 max-w-3xl"> {/* Increased max-width */}
+    <div className="container mx-auto px-4 max-w-3xl">
       {/* Project Title with Dynamic External Link */}
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
@@ -69,33 +71,170 @@ const ProjectDetail = () => {
             className="border-b border-neutral-800 pb-4"
           >
             {/* Main Section */}
-            <h2 className="text-xl font-semibold text-center pb-6">{job.title}</h2>
+            <h2 className="text-xl font-semibold text-center pb-6">
+              {job.title}
+            </h2>
 
             <div className="space-y-6">
-              <p className="text-md text-neutral-400 leading-relaxed w-full">{job.desc1}</p> {/* Wider paragraphs */}
-
               {job.subtitle && (
                 <>
-                  <h3 className="text-lg font-semibold text-center pt-6">{job.subtitle}</h3>
-                  <p className="text-md text-neutral-400 leading-relaxed w-full">{job.desc2}</p>
-                  <p className="text-md text-neutral-400 leading-relaxed w-full">{job.desc99}</p>
-                  <p className="text-md text-neutral-400 leading-relaxed w-full">{job.desc98}</p>
+                  <h3 className="text-lg font-semibold text-center pt-6">
+                    {job.subtitle}
+                  </h3>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc1}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc2}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc99}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc98}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc97}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc96}
+                  </p>
+
+                  {/* Image Grid for Subtitle */}
+                  <div className={`grid ${projectId === "interactive-learning" ? "grid-cols-3 md:grid-cols-4" : "grid-cols-4"} gap-4 mt-2`}>
+                    {job.images1?.map((image, i) => (
+                      <motion.img
+                        key={i}
+                        src={image}
+                        alt={`Section Image ${i + 1}`}
+                        className="w-full h-auto max-h-96 rounded-lg shadow-md cursor-pointer"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4, delay: i * 0.1 }}
+                        onClick={() => setSelectedImage(image)}
+                      />
+                    ))}
+                  </div>
                 </>
               )}
 
               {job.subtitle2 && (
                 <>
-                  <h3 className="text-lg font-semibold text-center pt-6">{job.subtitle2}</h3>
-                  <p className="text-md text-neutral-400 leading-relaxed w-full">{job.desc3}</p>
-                  <p className="text-md text-neutral-400 leading-relaxed w-full">{job.desc95}</p>
+                  <h3 className="text-lg font-semibold text-center pt-6">
+                    {job.subtitle2}
+                  </h3>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc3}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc01}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc02}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc03}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc95}
+                  </p>
+
+                  {/* Image Grid for Subtitle2 */}
+                  <div className={`grid ${projectId === "interactive-learning" ? "grid-cols-3 md:grid-cols-4" : "grid-cols-4"} gap-4 mt-2`}>
+                    {job.images2?.map((image, i) => (
+                      <motion.img
+                        key={i}
+                        src={image}
+                        alt={`Section Image ${i + 1}`}
+                        className="w-full h-auto max-h-96 rounded-lg shadow-md cursor-pointer"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4, delay: i * 0.1 }}
+                        onClick={() => setSelectedImage(image)}
+                      />
+                    ))}
+                  </div>
                 </>
               )}
 
               {job.subtitle3 && (
                 <>
-                  <h3 className="text-lg font-semibold text-center pt-6">{job.subtitle3}</h3>
-                  <p className="text-md text-neutral-400 leading-relaxed w-full">{job.desc5}</p>
-                  <p className="text-md text-neutral-400 leading-relaxed w-full">{job.desc04}</p>
+                  <h3 className="text-lg font-semibold text-center pt-6">
+                    {job.subtitle3}
+                  </h3>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc5}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc04}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc05}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc06}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc07}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc08}
+                  </p>
+
+                  {/* Image Grid for Subtitle3 */}
+                  <div className={`grid ${projectId === "interactive-learning" ? "grid-cols-3 md:grid-cols-4" : "grid-cols-4"} gap-4 mt-2`}>
+                    {job.images3?.map((image, i) => (
+                      <motion.img
+                        key={i}
+                        src={image}
+                        alt={`Section Image ${i + 1}`}
+                        className="w-full h-auto max-h-96 rounded-lg shadow-md cursor-pointer"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4, delay: i * 0.1 }}
+                        onClick={() => setSelectedImage(image)}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+
+              {job.subtitle4 && (
+                <>
+                  <h3 className="text-lg font-semibold text-center pt-6">
+                    {job.subtitle4}
+                  </h3>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc6}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc09}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc10}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc11}
+                  </p>
+                  <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc12}
+                  </p>
+
+                  {/* Image Grid for Subtitle4 */}
+                  <div className={`grid ${projectId === "interactive-learning" ? "grid-cols-3 md:grid-cols-4" : "grid-cols-4"} gap-4 mt-2`}>
+                    {job.images4?.map((image, i) => (
+                      <motion.img
+                        key={i}
+                        src={image}
+                        alt={`Section Image ${i + 1}`}
+                        className="w-full h-auto max-h-96 rounded-lg shadow-md cursor-pointer"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4, delay: i * 0.1 }}
+                        onClick={() => setSelectedImage(image)}
+                      />
+                    ))}
+                  </div>
                 </>
               )}
             </div>
@@ -117,6 +256,23 @@ const ProjectDetail = () => {
           Back to Home
         </Link>
       </motion.div>
+
+{/* Fullscreen Modal for Images */}
+{selectedImage && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center pt-[144px] overflow-auto"
+    onClick={() => setSelectedImage(null)}
+  >
+    <motion.img
+      src={selectedImage}
+      alt="Fullscreen Image"
+      className="max-w-screen max-h-screen"
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.3 }}
+    />
+  </div>
+)}
     </div>
   );
 };

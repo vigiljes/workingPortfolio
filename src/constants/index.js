@@ -15,6 +15,15 @@ import wireframe6 from "../assets/wireframes/wireframe6.png";
 import wireframe7 from "../assets/wireframes/wireframe7.png";
 import wireframe8 from "../assets/wireframes/wireframe8.png";
 import wireframe9 from "../assets/wireframes/wireframe9.png";
+import wireframe10 from "../assets/wireframes/wireframe10.png";
+import wireframe11 from "../assets/wireframes/wireframe11.png";
+import wireframe12 from "../assets/wireframes/wireframe12.png";
+import wireframe13 from "../assets/wireframes/wireframe13.png";
+import wireframe14 from "../assets/wireframes/wireframe14.png";
+import wireframe15 from "../assets/wireframes/wireframe15.png";
+import wireframe16 from "../assets/wireframes/wireframe16.png";
+import wireframe17 from "../assets/wireframes/wireframe17.png";
+import wireframe18 from "../assets/wireframes/wireframe18.png";
 
 
 import { time } from "framer-motion";
@@ -153,6 +162,7 @@ export const JOBS5 = [
 export const JOBS6 = [
   {
     title: "📌 Where It Started",
+
     subtitle: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc1: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc2: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
@@ -160,12 +170,16 @@ export const JOBS6 = [
     desc98: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc97: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc96: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    images1: [wireframe10, wireframe11], // 👈 Images for this section
+
     subtitle2: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc3: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc01: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc02: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc03: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc95: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    images2: [wireframe12, wireframe13, wireframe14, wireframe15], // 👈 More images here
+
     subtitle3: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc5: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc04: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
@@ -173,12 +187,15 @@ export const JOBS6 = [
     desc06: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc07: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc08: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    images3: [wireframe16, wireframe17], // 👈 Images for this section
+
     subtitle4: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc6: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc09: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc10: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc11: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
     desc12: "PAGE UNDER CONSTRUCTION PLEASE COME BACK SOON",
+    images4: [wireframe18], // 👈 Images for this section
   },
 ];
 
@@ -225,6 +242,7 @@ export const PROJECTS = [
   },
   {
     id: "interactive-learning",
+    website: "https://www.google.com/",
     title: "Circle of Fifths - Interactive Learning",
     image: project5,
     description:
