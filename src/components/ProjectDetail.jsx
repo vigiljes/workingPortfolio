@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { PROJECTS, JOBS3, JOBS4, JOBS5, JOBS6 } from "../constants";
+import { PROJECTS, JOBS3, JOBS4, JOBS5, JOBS6, } from "../constants";
 import { motion } from "framer-motion";
 
 const ProjectDetail = () => {
