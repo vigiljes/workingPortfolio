@@ -74,6 +74,9 @@ const ProjectDetail = () => {
             <h2 className="text-xl font-semibold text-center pb-6">
               {job.title}
             </h2>
+            <p className="text-md text-neutral-400 leading-relaxed w-full">
+                    {job.desc1}
+                  </p>
 
             <div className="space-y-6">
               {job.subtitle && (
