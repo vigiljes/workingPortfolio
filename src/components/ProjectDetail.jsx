@@ -3,6 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import { PROJECTS, JOBS3, JOBS4, JOBS5, JOBS6 } from "../constants";
 import { motion } from "framer-motion";
 
+import prototypeVideo from "../assets/prototype.mp4";
+
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const project = PROJECTS.find((p) => p.id === projectId);
@@ -244,6 +246,15 @@ const ProjectDetail = () => {
           </motion.div>
         ))}
       </div>
+
+      {projectId === "interactive-learning" && (
+  <div className="mt-8">
+    <video controls className="w-full rounded-lg shadow-md">
+      <source src={prototypeVideo} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+)}
 
       {/* Back Button */}
       <motion.div
