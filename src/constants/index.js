@@ -242,7 +242,6 @@ export const PROJECTS = [
   },
   {
     id: "interactive-learning",
-    website: "https://www.google.com/",
     title: "Circle of Fifths - Interactive Learning",
     image: project5,
     description:
