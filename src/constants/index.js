@@ -170,7 +170,7 @@ export const JOBS6 = [
     desc98: "To create the most engaging experience possible, we decided on a format that combined guided demonstrations and freeform interaction. This way, different types of learners—those who need structured explanations and those who learn best through exploration—could all benefit.",
     desc97: "",
     desc96: "",
-    images1: [wireframe10, wireframe11, wireframe14, wireframe15], // 👈 Images for this section
+    images1: [wireframe10, wireframe13, wireframe14], // 👈 Images for this section
 
     subtitle2: "Project Process 📝",
     desc3: "Our team began with brainstorming and research, listing interaction possibilities and studying museum exhibits that successfully integrated multi-sensory learning. The goal was to understand how kids naturally engage with hands-on learning.",
@@ -178,7 +178,7 @@ export const JOBS6 = [
     desc02: "We developed an individual learning plan outlining user needs, motivations, behaviors, and pain points. This was based on comparative analysis, focus groups, and surveys, giving us a clearer picture of how students and teachers might engage with the system.",
     desc03: "The learning plan revealed key challenges, like ensuring engagement despite shortened attention spans and making terminology accessible for younger students. Addressing these concerns meant simplifying complex ideas while keeping interactions dynamic.",
     desc95: "To further refine engagement strategies, we created a Proto Persona of a curious 5th-grade student. This persona helped guide decisions on interaction flow, user feedback, and adaptability within the exhibit’s design.",
-    images2: [wireframe12, wireframe13, wireframe14, wireframe15], // 👈 More images here
+    images2: [wireframe12, wireframe11, wireframe15], // 👈 More images here
 
     subtitle3: "Sketching and Wireframing 🖌️",
     desc5: "After defining the user experience, we moved into task flows and initial wireframing. Sketching out wireframes helped visualize how different elements would interact, ensuring a smooth transition from conceptual ideas to functional designs. Wireframing focused primarily on mid-fidelity designs. Given the project’s emphasis on sound rather than visuals, this approach kept the interaction clean without unnecessary complexity.",
