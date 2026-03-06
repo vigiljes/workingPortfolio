@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import resumePDF from "../assets/resumeSOhardTOfindWHYYY.pdf";
+import resumePDF from "../assets/JesusVigil_CV.pdf";
 import resumeImage from "../assets/resumeSOhardTOfindWHYYY.jpg"; // Preview image
 
 const Experience = () => {
