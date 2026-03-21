@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import logo from "../assets/kevinRushLogo.gif";
-import { FaLinkedin, FaGithub, FaSoundcloud, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaYoutube, FaInstagram } from "react-icons/fa";
 import Dropdown from "./Dropdown";
 
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
       <div className="flex items-center gap-3 text-lg sm:gap-4 sm:text-2xl">
         <a href="https://www.linkedin.com/in/jesus-vigil313/" target="_blank"><FaLinkedin /></a>
         <a href="https://github.com/vigiljes" target="_blank"><FaGithub /></a>
-        <a href="https://soundcloud.com/jaymv313" target="_blank"><FaSoundcloud /></a>
+        <a href="https://www.youtube.com/@chuy.vii313" target="_blank"><FaYoutube /></a>
         <a href="https://www.instagram.com/chuy_vii/" target="_blank"><FaInstagram /></a>
       </div>
     </nav>
