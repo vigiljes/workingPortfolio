@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logo from "../assets/kevinRushLogo.gif";
+import logo from "../assets/jayviiLogo.gif";
 import { FaLinkedin, FaGithub, FaYoutube, FaInstagram } from "react-icons/fa";
 import Dropdown from "./Dropdown";
 
